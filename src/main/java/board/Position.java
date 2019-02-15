@@ -4,35 +4,17 @@ import pieces.Piece;
 
 public class Position {
 	Position(int x, int y){
-		setRow(x);
-		setCol(y);
-		setPiece(null);
-	}
-	private int row;
-	private int col;
-	private Piece piece;
-	
-	public int getRow() {
-		return row;
+		this.pieceOver = null;
+		
 	}
 	
-	public void setRow(int row) {
-		this.row = row;
-	}
+	private Piece pieceOver;
+	int row;
+	int col;
+	Position upperSquare = Board.getPositionByXY(this.row, this.col + 1);
+	Position lowerSquare = Board.getPositionByXY(this.row, this.col - 1);
+	Position rightSquare = Board.getPositionByXY(this.row + 1, this.col);
+	Position leftSquare = Board.getPositionByXY(this.row - 1, this.col + 1);
 	
-	public int getCol() {
-		return col;
-	}
 	
-	public void setCol(int col) {
-		this.row = col;
-	}
-	
-	public Piece getPiece() {
-		return piece;
-	}
-	
-	public void setPiece(Piece piece) {
-		this.piece = piece;
-	}
 }

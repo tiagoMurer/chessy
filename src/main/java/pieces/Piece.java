@@ -1,20 +1,16 @@
 package pieces;
 
-//import board.Position;
+import movementBehaviours.*;
 
-public class Piece {
-	Piece(){	
+public abstract class Piece {
+	
+	boolean isWhite;
+	MovementBehaviour direction;
+	NumberofSteps steps;
+	
+	Piece(){
+		
 	}
 	
-	
-	private boolean isWhite; //Cor da peça: True = branca, False = preta;
-	
-	public boolean getIsWhite() {
-		return isWhite;
-	}
-	
-	public void setIsWhite(boolean isWhite) {
-		this.isWhite = isWhite;
-	}
 }
 	
