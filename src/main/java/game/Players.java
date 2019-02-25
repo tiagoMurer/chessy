@@ -1,5 +1,10 @@
 package game;
 
-public class Players {
+import pieces.*;
+import board.*;
 
+public class Players {
+	public void movePiece(Piece piece, Position position) {
+		piece.position = position;
+	}
 }

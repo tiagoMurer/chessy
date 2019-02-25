@@ -9,8 +9,8 @@ public class Position {
 	}
 	
 	private Piece pieceOver;
-	int row;
-	int col;
+	public int row;
+	public int col;
 	Position upperSquare = Board.getPositionByXY(this.row, this.col + 1);
 	Position lowerSquare = Board.getPositionByXY(this.row, this.col - 1);
 	Position rightSquare = Board.getPositionByXY(this.row + 1, this.col);

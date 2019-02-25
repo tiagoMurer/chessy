@@ -1,15 +1,18 @@
 package pieces;
 
-import movementBehaviours.*;
+import java.util.ArrayList;
 
-public abstract class Piece {
+import board.*;
+
+public abstract class Piece{
 	
-	boolean isWhite;
-	MovementBehaviour direction;
-	NumberofSteps steps;
+	
+	public ArrayList<Position> allValid = new ArrayList<Position>();
+	public boolean isWhite;
+	public Position position;
 	
 	Piece(){
-		
+	
 	}
 	
 }

@@ -16,7 +16,7 @@ public class Board{
 	
 	static ArrayList<Position> board = new ArrayList<Position>();
 	
-	static Position getPositionByXY(int x, int y) {
+	public static Position getPositionByXY(int x, int y) {
 		for (Position position:board) {
 			if(position.row == x && position.col == y) {
 				return position;
